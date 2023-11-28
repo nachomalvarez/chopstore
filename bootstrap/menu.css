@@ -1,0 +1,46 @@
+
+@media (min-width: 1200px) {
+.navbutton 
+    {
+    width: 500px;
+    margin-left: 15%;
+}
+}
+
+.boca {
+    padding-left: 20%;
+}
+
+/* .carrusel20 {
+    object-fit: cover;
+    margin-left: 12%;
+}
+ */
+.bacj {
+    margin-left: 10%;
+}
+
+.bacj2 {
+    margin-right: 10%;
+}
+
+nav, footer {
+   background-color: rgb(123, 32, 44); 
+}
+
+.logo {
+    width: 10%;
+}
+
+.footer-logo {
+    width: 18%
+}
+
+.boca12 {
+    margin-left: 2%;
+}
+
+.instagram {
+    background: transparent;
+    
+}

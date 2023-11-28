@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="container-form">
+            <h2 class="titulo-vuelos"> Vuelos con reserva flexible </h2>
+            <h4 class="subtitulo-descripcion"> Encontra pasajes aereos con la posibilidad de cambiar las fechas de
+                vuelo. </h4>
+            <form class="formulario">
+                <section>
+                    <input type="radio" id="1" name="destino" value="ida-vuelta" />
+                    <label for="1"> Ida y vuelta </label>
+
+                    <input type="radio" id="2" name="destino" value="solo-ida" />
+                    <label for="1"> Solo ida </label>
+
+                    <input type="radio" id="3" name="destino" value="multidestino" />
+                    <label for="1"> Multidestino </label>
+                </section>
+        </div>
+        <div>
+            <section class="container-destination">
+                <div class="container-origin">
+                    <label class="origen-css" for="paises1"> Origen </label>
+                    <select>
+                        <option default aria-required="true"> Seleccione su origen </option>
+                        <option value="argentina"> Aeropuerto Ezeiza, Buenos Aires (ARG)</option>
+                        <option value="argentina"> Aeropuerto Aeroparque, Buenos Aires (ARG)</option>
+                        <option value="argentina"> Aeropuerto Caracas, Venezuela (VZ)</option>
+                        <option value="argentina"> Aeropuerto de Santiago, Chile (CL)</option>
+                    </select>
+                </div>
+
+                <label class="destino-css" for="paises2"> Destino </label>
+                <select id="country-destination">
+                    <option default aria-required="true"> Seleccione su destino </option>
+                    <option value="argentina"> Aeropuerto LAX, California (EE.UU)</option>
+                    <option value="argentina"> Aeropuerto Madrid, Madrid (ESP)</option>
+                    <option value="argentina"> Aeropuerto Sao Pablo, Brasil (BR)</option>
+                    <option value="argentina"> Aeropuerto Ottawa, Canada (CAN)</option>
+                </select>
+
+                <section class="calendario">
+                    <label for="fecha"> Fechas </label>
+                    <input type="date" id="fecha" name="fecha">
+                </section>
+
+                <section class="pasajeros">
+                    <label for="pasajeros"> Pasajeros y clase </label>
+                    <select class="boton-pasajeros" name="passengers" id="pasajeros">
+                        <option default aria-required="true"> Seleccione su opcion </option>
+                        <option value="pasajeros1"> 1 Persona, economica</option>
+                        <option value="pasajeros2"> 2 Personas, economica</option>
+                        <option value="pasajeros3"> 3 Personas, economica</option>
+                        <option value="pasajeros4"> 4 Personas, economica</option>
+                        <option value="pasajeros5"> 1 Persona, Premium class</option>
+                        <option value="pasajeros6"> 2 Personas, Premium class</option>
+                    </select>
+                </section>
+                
+                <form class="form" action="/redireccion1.html">
+                <section class="boton"> 
+                    <em class="btn-text">Buscar</em>
+                    <input type="submit" class="boton1">
+                </form>
+                </section>
+            
+            </section>
+
+        </div>
+        </form>
+    </main>
+</body>
+
+</html>

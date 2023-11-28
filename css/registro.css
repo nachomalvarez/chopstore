@@ -1,0 +1,109 @@
+header {
+    height: 190px;
+    background-color: rgb(123, 32, 44);
+    position: fixed;
+    min-width: 100%;
+    max-width: 100%;
+    top: 0;
+    right: 0;
+}
+@media (max-width: 600px) {
+    header {
+    display: flex;
+    height: 130px;
+    }
+  }
+body {
+    background-color: rgba(128, 128, 128, 0.699);
+}
+.create {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    .create {
+        margin-top: 25%;
+    }
+}
+.registrarse {
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 12%;
+}
+.registro {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    flex-direction: row;
+    padding-right: 5px;
+    color: white;
+}
+
+.contenedor-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family:Arial, Helvetica, sans-serif;
+}
+@media (max-width: 600px) {
+    .contenedor-total {
+        display: grid;
+        margin-left: 8%;
+        gap: 8px;
+        width: 80%;
+    }
+}
+/* 1er paso y 2do paso */
+.step2 {
+    display: flex;
+    justify-content: center;
+}
+.step1 {
+    display: flex;
+    justify-content: center;
+}
+/* Contenedor primer paso */
+.contenedor-user {
+    background-color:  rgba(123, 32, 44, 0.699);
+    border: 1px solid black;
+    padding: 0px 5px 5px 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 500px;
+}
+.tel, .name, .surname, .email, .email2, .sex, .document, .ingrese-personal {
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+/* Contenedor segundo paso */
+.contenedor-pw {
+    box-sizing: border-box;
+    background-color:  rgba(123, 32, 44, 0.699);
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 110%;
+}
+@media (max-width: 600px) {
+    .contenedor-pw {
+        width: 100%;
+    }
+}
+
+.password, .register-button, .repeat-password, .terms, .ingrese-clave {
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.logo-register {
+    margin-left: 33%;
+    width: 30%;
+    margin-top: 2.5%;
+}
+@media (max-width: 600px) {
+    .logo-register {
+        display: flex;
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 6%;
+    }
+}
+

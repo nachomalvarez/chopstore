@@ -1,0 +1,93 @@
+/* Colores principales de la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap');
+:root {
+    --color-nav: rgb(123, 32, 44);
+    --color-background: rgba(128, 128, 128, 0.699);
+    --nav-font-size: larger;
+    --nav-font-family:'Roboto Slab', serif;
+}
+
+/* medidas para pantallas
+celular: 600px
+tablet: 768px
+desktop: 900px */
+
+header {
+    height: 190px;
+    background-color: var(--color-nav);
+    position: fixed;
+    min-width: 100%;
+    max-width: 100%;
+    top: 0;
+    right: 0;
+}
+
+body {
+    background-color: var(--color-background)
+}
+input[type="submit"] {
+    color: rgba(128, 128, 128, 0.699);
+    background: rgb(123, 32, 44);
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 20%;
+}
+.registro {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    flex-direction: row;
+    padding-right: 5px;
+    color: white;
+}
+@media (max-width: 600px) {
+.registro { 
+    justify-content: space-around;
+    margin-right: 10%;
+}
+}
+
+/* Secciones, logo y opciones */
+.navbar {                            
+    background-color: rgb(123, 32, 44);
+    position: sticky;
+    top: 0;
+  }
+.navbar2 {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+  }
+  @media (max-width: 600px) {
+    .navbar2, .li {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        margin-left: 5%;
+        gap: 20px;
+    }
+  }
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: var(--font-size);
+    font-family:var(--nav-font-family);
+}
+li {
+    padding-right: 2.7%;
+}
+
+#logo {
+    margin-left: 33%;
+    width: 30%;
+    margin-top: -0.5%;
+}
+@media (max-width: 600px) {
+    #logo {
+        display: flex;
+        width: 60%;
+        margin-left: 20%;
+    }
+  }
+ 
